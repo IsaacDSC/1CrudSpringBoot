@@ -1,0 +1,34 @@
+###
+GET http://localhost:8080/api/v1/products
+
+
+###
+POST http://localhost:8080/api/v1/products
+Content-Type: application/json
+
+{
+  "name": "tell-1",
+  "description": "1 vcpu 16gbRam 64Gb",
+  "value": 99.99,
+  "amount": 10
+}
+
+###
+GET http://localhost:8080/api/v1/products/1
+
+
+###
+PUT http://localhost:8080/api/v1/products
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "tell-1",
+  "description": "1 vcpu 16gbRam 64Gb",
+  "value": 99.99,
+  "amount": 10
+}
+
+###
+DELETE http://localhost:8080/api/v1/products/1
+Content-Type: application/json
